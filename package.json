@@ -1,0 +1,19 @@
+{
+  "name": "mk-service-utils",
+  "version": "0.0.2",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ziaochina/mk-service-utils.git"
+  },
+  "author": "lsg",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ziaochina/mk-service-utils/issues"
+  },
+  "homepage": "https://github.com/ziaochina/mk-service-utils#readme"
+}
