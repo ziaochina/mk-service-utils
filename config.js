@@ -5,7 +5,7 @@ function config(options) {
 
 var current = {
     md5: {
-        key: ''
+        key: ""
     }
 }
 
