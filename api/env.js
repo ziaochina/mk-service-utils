@@ -1,17 +1,17 @@
 var env = {
 
 }
-function translate(cfg, valueObj = getENV(), level = 1) {
+function translate(cfg, level = 1, valueObj = getENV()) {
   Object.keys(cfg).forEach(key => {
     var value = cfg[key];
     if (value && typeof value == "object" && level > 1) {
-      translate(value, valueObj, --level)
+      translate(value, level - 1, valueObj)
     }
     else if (typeof value == "string") {
-      var match = value.match(/\${(\w+)}/g);
+      var match = value.match(/\${([^}]+)}/g);
       match && match.forEach(m => {
-        var word = m.match(/\w+/g)[0];
-        var evnValue = valueObj[word];
+        var word = m.substr(2).replace("}", "");
+        var evnValue = valueObj[word] || "";
         value = value.replace(new RegExp("\\$\\{" + word + "\\}", "g"), evnValue);
       })
       cfg[key] = value;
