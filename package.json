@@ -1,6 +1,6 @@
 {
   "name": "mk-service-utils",
-  "version": "0.0.2",
+  "version": "1.0.7",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -8,12 +8,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ziaochina/mk-service-utils.git"
+    "url": "git+https://github.com/lishengguo/mk-service-utils.git"
   },
   "author": "lsg",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ziaochina/mk-service-utils/issues"
+    "url": "https://github.com/lishengguo/mk-service-utils/issues"
   },
-  "homepage": "https://github.com/ziaochina/mk-service-utils#readme"
+  "homepage": "https://github.com/lishengguo/mk-service-utils#readme"
 }

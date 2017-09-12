@@ -25,6 +25,7 @@ module.exports = index;
 function config(options) {
     var current = config.current
     Object.assign(current, options)
+    api.env(current)
     api._init(current)
 }
 config.current = {
